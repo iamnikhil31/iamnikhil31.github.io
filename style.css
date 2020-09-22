@@ -95,9 +95,6 @@ button a{
 #logo img{
     height: 226px;
 }
-#logo1{
-    display: none;
-}
 svg{
     position: absolute;
     bottom: 0;
@@ -217,6 +214,10 @@ nav ul li a.active,nav ul li a:hover{
     .title h1, #txt, .typed, #logo img, button a{
         z-index: -1;
     }
+    .head{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     .title h1{
         font-size: 1.8rem;
     }
@@ -234,7 +235,16 @@ nav ul li a.active,nav ul li a:hover{
         padding: 0.4rem 0.8rem;
     }
 }
-@media (max-width: 655px){
+
+@media (max-width: 455px){
+    .closebtn{
+        font-size: 25px;
+        right: 1.8rem;
+    }
+    .checkbtn{
+        font-size: 25px;
+        margin-right: 1.8rem;
+    }
     .title h1{
         font-size: 1.5rem;
     }
@@ -246,21 +256,13 @@ nav ul li a.active,nav ul li a:hover{
         font-size: 1.5rem;
     }
     #logo img{
-        height: 150px;
+        height: 180px;
     }
     button a{
         padding: 0.4rem 0.8rem;
     }
 }
-@media (max-width: 550px){
-    .closebtn{
-        font-size: 25px;
-        right: 1.8rem;
-    }
-    .checkbtn{
-        font-size: 25px;
-        margin-right: 1.8rem;
-    }
+@media (max-width: 355px){
     .title h1{
         font-size: 1.2rem;
     }
@@ -272,28 +274,10 @@ nav ul li a.active,nav ul li a:hover{
         font-size: 1.2rem;
     }
     #logo img{
-        height: 120px;
-    }
-    button a{
-        padding: 0.2rem 0.4rem;
-    }
-    .btns button{
-        margin: 8px 0;
-        padding: 0.4rem 0;
-        font-size: 0.8rem;
+        height: 160px;
     }
 }
-@media (max-width: 455px){
-    .head{
-        flex-direction: column;
-        align-items: center;
-    }
-    #logo img{ display: none;}
-    #logo1{display: block;}
-    #logo1 img{
-        height: 120px;
-    }
-}
+
 
 @keyframes headerbganimate {
     0%{
